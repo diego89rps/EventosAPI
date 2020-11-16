@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22D2562CD0400875C59 /* AppDelegate.swift */; };
+		9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */; };
+		9FE9A2322562CD0400875C59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2312562CD0400875C59 /* ViewController.swift */; };
+		9FE9A2352562CD0400875C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2332562CD0400875C59 /* Main.storyboard */; };
+		9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2362562CD0600875C59 /* Assets.xcassets */; };
+		9FE9A23A2562CD0600875C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */; };
+		9FE9A2452562CD0600875C59 /* EventosMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2442562CD0600875C59 /* EventosMobileTests.swift */; };
+		9FE9A2502562CD0600875C59 /* EventosMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A24F2562CD0600875C59 /* EventosMobileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FE9A2412562CD0600875C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FE9A2222562CD0400875C59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FE9A2292562CD0400875C59;
+			remoteInfo = EventosMobile;
+		};
+		9FE9A24C2562CD0600875C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FE9A2222562CD0400875C59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FE9A2292562CD0400875C59;
+			remoteInfo = EventosMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FE9A22A2562CD0400875C59 /* EventosMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventosMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE9A22D2562CD0400875C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FE9A2312562CD0400875C59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE9A2342562CD0400875C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FE9A2362562CD0600875C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FE9A2392562CD0600875C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FE9A23B2562CD0600875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE9A2402562CD0600875C59 /* EventosMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventosMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE9A2442562CD0600875C59 /* EventosMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosMobileTests.swift; sourceTree = "<group>"; };
+		9FE9A2462562CD0600875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE9A24B2562CD0600875C59 /* EventosMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventosMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE9A24F2562CD0600875C59 /* EventosMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosMobileUITests.swift; sourceTree = "<group>"; };
+		9FE9A2512562CD0600875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FE9A2272562CD0400875C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A23D2562CD0600875C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A2482562CD0600875C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FE9A2212562CD0400875C59 = {
+			isa = PBXGroup;
+			children = (
+				9FE9A22C2562CD0400875C59 /* EventosMobile */,
+				9FE9A2432562CD0600875C59 /* EventosMobileTests */,
+				9FE9A24E2562CD0600875C59 /* EventosMobileUITests */,
+				9FE9A22B2562CD0400875C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FE9A22B2562CD0400875C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A22A2562CD0400875C59 /* EventosMobile.app */,
+				9FE9A2402562CD0600875C59 /* EventosMobileTests.xctest */,
+				9FE9A24B2562CD0600875C59 /* EventosMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FE9A22C2562CD0400875C59 /* EventosMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A22D2562CD0400875C59 /* AppDelegate.swift */,
+				9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */,
+				9FE9A2312562CD0400875C59 /* ViewController.swift */,
+				9FE9A2332562CD0400875C59 /* Main.storyboard */,
+				9FE9A2362562CD0600875C59 /* Assets.xcassets */,
+				9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */,
+				9FE9A23B2562CD0600875C59 /* Info.plist */,
+			);
+			path = EventosMobile;
+			sourceTree = "<group>";
+		};
+		9FE9A2432562CD0600875C59 /* EventosMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2442562CD0600875C59 /* EventosMobileTests.swift */,
+				9FE9A2462562CD0600875C59 /* Info.plist */,
+			);
+			path = EventosMobileTests;
+			sourceTree = "<group>";
+		};
+		9FE9A24E2562CD0600875C59 /* EventosMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A24F2562CD0600875C59 /* EventosMobileUITests.swift */,
+				9FE9A2512562CD0600875C59 /* Info.plist */,
+			);
+			path = EventosMobileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FE9A2292562CD0400875C59 /* EventosMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE9A2542562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobile" */;
+			buildPhases = (
+				9FE9A2262562CD0400875C59 /* Sources */,
+				9FE9A2272562CD0400875C59 /* Frameworks */,
+				9FE9A2282562CD0400875C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventosMobile;
+			productName = EventosMobile;
+			productReference = 9FE9A22A2562CD0400875C59 /* EventosMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FE9A23F2562CD0600875C59 /* EventosMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE9A2572562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobileTests" */;
+			buildPhases = (
+				9FE9A23C2562CD0600875C59 /* Sources */,
+				9FE9A23D2562CD0600875C59 /* Frameworks */,
+				9FE9A23E2562CD0600875C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FE9A2422562CD0600875C59 /* PBXTargetDependency */,
+			);
+			name = EventosMobileTests;
+			productName = EventosMobileTests;
+			productReference = 9FE9A2402562CD0600875C59 /* EventosMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FE9A24A2562CD0600875C59 /* EventosMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE9A25A2562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobileUITests" */;
+			buildPhases = (
+				9FE9A2472562CD0600875C59 /* Sources */,
+				9FE9A2482562CD0600875C59 /* Frameworks */,
+				9FE9A2492562CD0600875C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FE9A24D2562CD0600875C59 /* PBXTargetDependency */,
+			);
+			name = EventosMobileUITests;
+			productName = EventosMobileUITests;
+			productReference = 9FE9A24B2562CD0600875C59 /* EventosMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FE9A2222562CD0400875C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9FE9A2292562CD0400875C59 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					9FE9A23F2562CD0600875C59 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9FE9A2292562CD0400875C59;
+					};
+					9FE9A24A2562CD0600875C59 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9FE9A2292562CD0400875C59;
+					};
+				};
+			};
+			buildConfigurationList = 9FE9A2252562CD0400875C59 /* Build configuration list for PBXProject "EventosMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FE9A2212562CD0400875C59;
+			productRefGroup = 9FE9A22B2562CD0400875C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FE9A2292562CD0400875C59 /* EventosMobile */,
+				9FE9A23F2562CD0600875C59 /* EventosMobileTests */,
+				9FE9A24A2562CD0600875C59 /* EventosMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FE9A2282562CD0400875C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9A23A2562CD0600875C59 /* LaunchScreen.storyboard in Resources */,
+				9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */,
+				9FE9A2352562CD0400875C59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A23E2562CD0600875C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A2492562CD0600875C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FE9A2262562CD0400875C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9A2322562CD0400875C59 /* ViewController.swift in Sources */,
+				9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */,
+				9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A23C2562CD0600875C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9A2452562CD0600875C59 /* EventosMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE9A2472562CD0600875C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9A2502562CD0600875C59 /* EventosMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FE9A2422562CD0600875C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FE9A2292562CD0400875C59 /* EventosMobile */;
+			targetProxy = 9FE9A2412562CD0600875C59 /* PBXContainerItemProxy */;
+		};
+		9FE9A24D2562CD0600875C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FE9A2292562CD0400875C59 /* EventosMobile */;
+			targetProxy = 9FE9A24C2562CD0600875C59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FE9A2332562CD0400875C59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FE9A2342562CD0400875C59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FE9A2392562CD0600875C59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FE9A2522562CD0600875C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FE9A2532562CD0600875C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FE9A2552562CD0600875C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FE9A2562562CD0600875C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FE9A2582562CD0600875C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventosMobile.app/EventosMobile";
+			};
+			name = Debug;
+		};
+		9FE9A2592562CD0600875C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventosMobile.app/EventosMobile";
+			};
+			name = Release;
+		};
+		9FE9A25B2562CD0600875C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventosMobile;
+			};
+			name = Debug;
+		};
+		9FE9A25C2562CD0600875C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYX5QCYS9V;
+				INFOPLIST_FILE = EventosMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testwork.EventosMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventosMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FE9A2252562CD0400875C59 /* Build configuration list for PBXProject "EventosMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE9A2522562CD0600875C59 /* Debug */,
+				9FE9A2532562CD0600875C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE9A2542562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE9A2552562CD0600875C59 /* Debug */,
+				9FE9A2562562CD0600875C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE9A2572562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE9A2582562CD0600875C59 /* Debug */,
+				9FE9A2592562CD0600875C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE9A25A2562CD0600875C59 /* Build configuration list for PBXNativeTarget "EventosMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE9A25B2562CD0600875C59 /* Debug */,
+				9FE9A25C2562CD0600875C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FE9A2222562CD0400875C59 /* Project object */;
+}
