@@ -9,12 +9,32 @@
 /* Begin PBXBuildFile section */
 		9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22D2562CD0400875C59 /* AppDelegate.swift */; };
 		9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */; };
-		9FE9A2322562CD0400875C59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2312562CD0400875C59 /* ViewController.swift */; };
-		9FE9A2352562CD0400875C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2332562CD0400875C59 /* Main.storyboard */; };
 		9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2362562CD0600875C59 /* Assets.xcassets */; };
 		9FE9A23A2562CD0600875C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */; };
 		9FE9A2452562CD0600875C59 /* EventosMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2442562CD0600875C59 /* EventosMobileTests.swift */; };
 		9FE9A2502562CD0600875C59 /* EventosMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A24F2562CD0600875C59 /* EventosMobileUITests.swift */; };
+		9FE9A2742562D32A00875C59 /* Coodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2732562D32A00875C59 /* Coodinator.swift */; };
+		9FE9A27C2562D36500875C59 /* MainCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A27B2562D36500875C59 /* MainCoodinator.swift */; };
+		9FE9A2812562D47300875C59 /* ResumeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2802562D47300875C59 /* ResumeTabViewController.swift */; };
+		9FE9A2922562DDB100875C59 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2912562DDB100875C59 /* UIFontExtensions.swift */; };
+		9FE9A29B2562DDDC00875C59 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A29A2562DDDC00875C59 /* UIColorExtension.swift */; };
+		9FE9A2A32562DE0800875C59 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2A22562DE0800875C59 /* ViewCode.swift */; };
+		9FE9A2B82562DEC800875C59 /* Averta-Black-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2A82562DEC700875C59 /* Averta-Black-Italic.otf */; };
+		9FE9A2B92562DEC800875C59 /* Averta-Semibold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2A92562DEC700875C59 /* Averta-Semibold-Italic.otf */; };
+		9FE9A2BA2562DEC800875C59 /* Averta-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AA2562DEC700875C59 /* Averta-Semibold.otf */; };
+		9FE9A2BB2562DEC800875C59 /* Averta-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AB2562DEC700875C59 /* Averta-Black.otf */; };
+		9FE9A2BC2562DEC800875C59 /* Averta-Light-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AC2562DEC700875C59 /* Averta-Light-Italic.otf */; };
+		9FE9A2BD2562DEC800875C59 /* Averta-Extrathin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AD2562DEC700875C59 /* Averta-Extrathin.otf */; };
+		9FE9A2BE2562DEC800875C59 /* Averta-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AE2562DEC700875C59 /* Averta-Light.otf */; };
+		9FE9A2BF2562DEC800875C59 /* Averta-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2AF2562DEC700875C59 /* Averta-Bold-Italic.otf */; };
+		9FE9A2C02562DEC800875C59 /* Averta-Extra-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B02562DEC700875C59 /* Averta-Extra-Bold-Italic.otf */; };
+		9FE9A2C12562DEC800875C59 /* Averta-Extrathin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B12562DEC700875C59 /* Averta-Extrathin-Italic.otf */; };
+		9FE9A2C22562DEC800875C59 /* Averta-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B22562DEC700875C59 /* Averta-Regular-Italic.otf */; };
+		9FE9A2C32562DEC800875C59 /* Averta-Thin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B32562DEC700875C59 /* Averta-Thin-Italic.otf */; };
+		9FE9A2C42562DEC800875C59 /* Averta-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B42562DEC700875C59 /* Averta-Thin.otf */; };
+		9FE9A2C52562DEC800875C59 /* Averta-Extra-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B52562DEC700875C59 /* Averta-Extra-Bold.otf */; };
+		9FE9A2C62562DEC800875C59 /* Averta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B62562DEC700875C59 /* Averta-Bold.otf */; };
+		9FE9A2C72562DEC800875C59 /* Averta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B72562DEC700875C59 /* Averta.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +58,6 @@
 		9FE9A22A2562CD0400875C59 /* EventosMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventosMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE9A22D2562CD0400875C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FE9A2312562CD0400875C59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FE9A2342562CD0400875C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FE9A2362562CD0600875C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE9A2392562CD0600875C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE9A23B2562CD0600875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +67,28 @@
 		9FE9A24B2562CD0600875C59 /* EventosMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventosMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE9A24F2562CD0600875C59 /* EventosMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosMobileUITests.swift; sourceTree = "<group>"; };
 		9FE9A2512562CD0600875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE9A2732562D32A00875C59 /* Coodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coodinator.swift; sourceTree = "<group>"; };
+		9FE9A27B2562D36500875C59 /* MainCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoodinator.swift; sourceTree = "<group>"; };
+		9FE9A2802562D47300875C59 /* ResumeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTabViewController.swift; sourceTree = "<group>"; };
+		9FE9A2912562DDB100875C59 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		9FE9A29A2562DDDC00875C59 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9FE9A2A22562DE0800875C59 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		9FE9A2A82562DEC700875C59 /* Averta-Black-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Black-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Black-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2A92562DEC700875C59 /* Averta-Semibold-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Semibold-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Semibold-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2AA2562DEC700875C59 /* Averta-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Semibold.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Semibold.otf"; sourceTree = "<group>"; };
+		9FE9A2AB2562DEC700875C59 /* Averta-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Black.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Black.otf"; sourceTree = "<group>"; };
+		9FE9A2AC2562DEC700875C59 /* Averta-Light-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Light-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Light-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2AD2562DEC700875C59 /* Averta-Extrathin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Extrathin.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Extrathin.otf"; sourceTree = "<group>"; };
+		9FE9A2AE2562DEC700875C59 /* Averta-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Light.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Light.otf"; sourceTree = "<group>"; };
+		9FE9A2AF2562DEC700875C59 /* Averta-Bold-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Bold-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Bold-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2B02562DEC700875C59 /* Averta-Extra-Bold-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Extra-Bold-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Extra-Bold-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2B12562DEC700875C59 /* Averta-Extrathin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Extrathin-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Extrathin-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2B22562DEC700875C59 /* Averta-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Regular-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Regular-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2B32562DEC700875C59 /* Averta-Thin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Thin-Italic.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Thin-Italic.otf"; sourceTree = "<group>"; };
+		9FE9A2B42562DEC700875C59 /* Averta-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Thin.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Thin.otf"; sourceTree = "<group>"; };
+		9FE9A2B52562DEC700875C59 /* Averta-Extra-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Extra-Bold.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Extra-Bold.otf"; sourceTree = "<group>"; };
+		9FE9A2B62562DEC700875C59 /* Averta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Bold.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Bold.otf"; sourceTree = "<group>"; };
+		9FE9A2B72562DEC700875C59 /* Averta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Averta.otf; path = ../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +139,12 @@
 		9FE9A22C2562CD0400875C59 /* EventosMobile */ = {
 			isa = PBXGroup;
 			children = (
+				9FE9A28E2562DD6A00875C59 /* Components */,
+				9FE9A26F2562D2CC00875C59 /* View */,
+				9FE9A2702562D2D700875C59 /* ViewModel */,
+				9FE9A2722562D30300875C59 /* Model */,
 				9FE9A22D2562CD0400875C59 /* AppDelegate.swift */,
 				9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */,
-				9FE9A2312562CD0400875C59 /* ViewController.swift */,
-				9FE9A2332562CD0400875C59 /* Main.storyboard */,
 				9FE9A2362562CD0600875C59 /* Assets.xcassets */,
 				9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */,
 				9FE9A23B2562CD0600875C59 /* Info.plist */,
@@ -126,6 +168,88 @@
 				9FE9A2512562CD0600875C59 /* Info.plist */,
 			);
 			path = EventosMobileUITests;
+			sourceTree = "<group>";
+		};
+		9FE9A26F2562D2CC00875C59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2802562D47300875C59 /* ResumeTabViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE9A2702562D2D700875C59 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FE9A2712562D2EC00875C59 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A27B2562D36500875C59 /* MainCoodinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FE9A2722562D30300875C59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FE9A28E2562DD6A00875C59 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2A72562DE8A00875C59 /* Font */,
+				9FE9A2902562DD9600875C59 /* Extensions */,
+				9FE9A2712562D2EC00875C59 /* Coordinator */,
+				9FE9A28F2562DD7300875C59 /* Protocols */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9FE9A28F2562DD7300875C59 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2732562D32A00875C59 /* Coodinator.swift */,
+				9FE9A2A22562DE0800875C59 /* ViewCode.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9FE9A2902562DD9600875C59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2912562DDB100875C59 /* UIFontExtensions.swift */,
+				9FE9A29A2562DDDC00875C59 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FE9A2A72562DE8A00875C59 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2A82562DEC700875C59 /* Averta-Black-Italic.otf */,
+				9FE9A2AB2562DEC700875C59 /* Averta-Black.otf */,
+				9FE9A2AF2562DEC700875C59 /* Averta-Bold-Italic.otf */,
+				9FE9A2B62562DEC700875C59 /* Averta-Bold.otf */,
+				9FE9A2B02562DEC700875C59 /* Averta-Extra-Bold-Italic.otf */,
+				9FE9A2B52562DEC700875C59 /* Averta-Extra-Bold.otf */,
+				9FE9A2B12562DEC700875C59 /* Averta-Extrathin-Italic.otf */,
+				9FE9A2AD2562DEC700875C59 /* Averta-Extrathin.otf */,
+				9FE9A2AC2562DEC700875C59 /* Averta-Light-Italic.otf */,
+				9FE9A2AE2562DEC700875C59 /* Averta-Light.otf */,
+				9FE9A2B22562DEC700875C59 /* Averta-Regular-Italic.otf */,
+				9FE9A2A92562DEC700875C59 /* Averta-Semibold-Italic.otf */,
+				9FE9A2AA2562DEC700875C59 /* Averta-Semibold.otf */,
+				9FE9A2B32562DEC700875C59 /* Averta-Thin-Italic.otf */,
+				9FE9A2B42562DEC700875C59 /* Averta-Thin.otf */,
+				9FE9A2B72562DEC700875C59 /* Averta.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +355,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE9A2C12562DEC800875C59 /* Averta-Extrathin-Italic.otf in Resources */,
+				9FE9A2C32562DEC800875C59 /* Averta-Thin-Italic.otf in Resources */,
+				9FE9A2BB2562DEC800875C59 /* Averta-Black.otf in Resources */,
+				9FE9A2BA2562DEC800875C59 /* Averta-Semibold.otf in Resources */,
+				9FE9A2BD2562DEC800875C59 /* Averta-Extrathin.otf in Resources */,
 				9FE9A23A2562CD0600875C59 /* LaunchScreen.storyboard in Resources */,
+				9FE9A2BC2562DEC800875C59 /* Averta-Light-Italic.otf in Resources */,
+				9FE9A2C62562DEC800875C59 /* Averta-Bold.otf in Resources */,
+				9FE9A2C72562DEC800875C59 /* Averta.otf in Resources */,
+				9FE9A2C22562DEC800875C59 /* Averta-Regular-Italic.otf in Resources */,
+				9FE9A2B82562DEC800875C59 /* Averta-Black-Italic.otf in Resources */,
 				9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */,
-				9FE9A2352562CD0400875C59 /* Main.storyboard in Resources */,
+				9FE9A2BF2562DEC800875C59 /* Averta-Bold-Italic.otf in Resources */,
+				9FE9A2C02562DEC800875C59 /* Averta-Extra-Bold-Italic.otf in Resources */,
+				9FE9A2C42562DEC800875C59 /* Averta-Thin.otf in Resources */,
+				9FE9A2BE2562DEC800875C59 /* Averta-Light.otf in Resources */,
+				9FE9A2C52562DEC800875C59 /* Averta-Extra-Bold.otf in Resources */,
+				9FE9A2B92562DEC800875C59 /* Averta-Semibold-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE9A2322562CD0400875C59 /* ViewController.swift in Sources */,
+				9FE9A2812562D47300875C59 /* ResumeTabViewController.swift in Sources */,
+				9FE9A29B2562DDDC00875C59 /* UIColorExtension.swift in Sources */,
 				9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */,
+				9FE9A2922562DDB100875C59 /* UIFontExtensions.swift in Sources */,
 				9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */,
+				9FE9A27C2562D36500875C59 /* MainCoodinator.swift in Sources */,
+				9FE9A2742562D32A00875C59 /* Coodinator.swift in Sources */,
+				9FE9A2A32562DE0800875C59 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +440,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FE9A2332562CD0400875C59 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FE9A2342562CD0400875C59 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9FE9A2382562CD0600875C59 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYX5QCYS9V;
 				INFOPLIST_FILE = EventosMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYX5QCYS9V;
 				INFOPLIST_FILE = EventosMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
