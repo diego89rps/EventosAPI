@@ -7,11 +7,12 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     var coordinator: MainCoordinator?
-    //let disposeBag = DisposeBag()
+    let disposeBag = DisposeBag()
     let mainTab = ResumeViewController()
     let settingsTab = SettingsViewController()
     
@@ -41,10 +42,22 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
         mainTab.detailsCallback = {
             self.showDetails(with: $0, image: $1)
         }
+        settingsTab
+            .customView
+            .button
+            .rx
+            .tap
+            .bind { [weak self] (_) in
+                self?.showResgisterName()
+            }.disposed(by: disposeBag)
     }
     
     private func showDetails(with title: String, image: String) {
         self.coordinator?.goToDetails(with: title, image: image)
+    }
+    
+    private func showResgisterName() {
+        self.coordinator?.goToName()
     }
     
     private func addTabs() {

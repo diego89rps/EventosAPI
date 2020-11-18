@@ -9,11 +9,10 @@ import UIKit
 
 class SettingsViewController:  AppDefaultViewController {
     typealias CustomView = SettingsView
-    //typealias ViewModel = ResumeViewModel
-    //var detailsCallback: (String, String) -> Void = { _,_ in }
+    typealias ViewModel = SettingsViewModel
     
     let customView = CustomView()
-    //let viewModel = ViewModel()
+    let viewModel = ViewModel()
     
     override func loadView() {
         super.loadView()
@@ -22,12 +21,18 @@ class SettingsViewController:  AppDefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userReguster()
     }
-    private func userReguster(){
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if viewModel.userResgister(){
+            userRegister()
+        }
+    }
+    
+    private func userRegister(){
         customView.image.image = #imageLiteral(resourceName: "withRegister")
-        customView.name.text = "Diego Ribeiro"
-        customView.email.text = "diego@hotmail.com"
+        customView.name.text = viewModel.getName()
+        customView.email.text = viewModel.getEmail()
         customView.button.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
         customView.button.setTitle("Sair", for: .normal)
         customView.button.setTitleColor(.defaultColor(ColorName.defaultWhite), for: .normal)

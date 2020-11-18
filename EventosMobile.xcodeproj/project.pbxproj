@@ -13,6 +13,8 @@
 		9FC8A4152564CB08002C427B /* NameViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4142564CB08002C427B /* NameViewCotroller.swift */; };
 		9FC8A41A2564CB17002C427B /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4192564CB17002C427B /* EmailView.swift */; };
 		9FC8A41F2564CB26002C427B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A41E2564CB26002C427B /* EmailViewController.swift */; };
+		9FC8A4242564D65F002C427B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4232564D65F002C427B /* SettingsViewModel.swift */; };
+		9FC8A4292564E24D002C427B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4282564E24D002C427B /* User.swift */; };
 		9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22D2562CD0400875C59 /* AppDelegate.swift */; };
 		9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */; };
 		9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2362562CD0600875C59 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		9FC8A4142564CB08002C427B /* NameViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewCotroller.swift; sourceTree = "<group>"; };
 		9FC8A4192564CB17002C427B /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		9FC8A41E2564CB26002C427B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		9FC8A4232564D65F002C427B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		9FC8A4282564E24D002C427B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9FE9A22A2562CD0400875C59 /* EventosMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventosMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE9A22D2562CD0400875C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 				9FE9A2F325635D0100875C59 /* MapViewModel.swift */,
 				9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */,
 				9FE9A30925635E6400875C59 /* DetailsViewModel.swift */,
+				9FC8A4232564D65F002C427B /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				9FE9A2EE2563357900875C59 /* EventAdress.swift */,
+				9FC8A4282564E24D002C427B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -540,12 +546,14 @@
 				9FE9A2EF2563357900875C59 /* EventAdress.swift in Sources */,
 				9FE9A2742562D32A00875C59 /* Coodinator.swift in Sources */,
 				9FC8A41F2564CB26002C427B /* EmailViewController.swift in Sources */,
+				9FC8A4292564E24D002C427B /* User.swift in Sources */,
 				9FC8A41A2564CB17002C427B /* EmailView.swift in Sources */,
 				9FE9A2A32562DE0800875C59 /* ViewCode.swift in Sources */,
 				9FC8A4152564CB08002C427B /* NameViewCotroller.swift in Sources */,
 				9FE9A2FB25635DDA00875C59 /* DetailsView.swift in Sources */,
 				9FE9A2DB2562F57600875C59 /* ResumeViewCell.swift in Sources */,
 				9FE9A2EA2563306C00875C59 /* MapViewController.swift in Sources */,
+				9FC8A4242564D65F002C427B /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

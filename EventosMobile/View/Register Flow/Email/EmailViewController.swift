@@ -9,23 +9,23 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class NameViewController: AppDefaultViewController {
-    typealias CustomView = NameView
-    //typealias ViewModel = GoalViewModel
+class EmailViewController: AppDefaultViewController {
+    typealias CustomView = EmailView
+    typealias ViewModel = SettingsViewModel
     
-    //var vm: ViewModel
+    let viewModel: ViewModel
     let customView = CustomView()
     var coordinator: MainCoordinator?
     let disposeBag = DisposeBag()
     
-//    init(with viewModel: GoalViewModel) {
-//        self.vm = viewModel
-//        super.init(nibName: nil, bundle: nil)
-//    }
+    init(with viewModel: SettingsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
     
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         view = customView
@@ -33,8 +33,7 @@ class NameViewController: AppDefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupButtonsBehaviour()
+        customView.textField.delegate = self
         customView.confirmButton.isEnabled = false
         customView.textField.becomeFirstResponder()
         bind()
@@ -50,28 +49,41 @@ class NameViewController: AppDefaultViewController {
             .rx
             .tap
             .bind {
-                self.setName()
+                self.setEmail()
             }.disposed(by: disposeBag)
 
+    }
+    
+    func setEmail(){
+        let email = self.customView.textField.text!
+        viewModel.setEmail(email: email)
+        print("\(viewModel.getName()) - \(viewModel.getEmail())")
+        viewModel.createRegister()
+        self.coordinator?.popToRoot()
+    }
+}
 
-    }
-    
-    func setName(){
-//        let name = self.customView.textField.text!
-//        vm.setName(name: name)
-//        self.coordinator?.goToGoalCostView(vm: vm)
-    }
-    
-    private func setupButtonsBehaviour() {
-        let nameValidation = customView.textField.rx.text.map({!($0!.count < 3)}).share(replay: 1)
-        
-        let enableButton = nameValidation
-            .asObservable()
-            .map { $0 }
-            .share(replay: 1)
-        
-        enableButton
-            .bind(to: customView.confirmButton.rx.isEnabled)
-            .disposed(by: disposeBag)
+extension EmailViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if(string.isEmpty){
+            if customView.textField.text!.count <= 3{
+                customView.confirmButton.isEnabled = false
+                customView.confirmButton.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
+            }
+            else{
+                customView.confirmButton.isEnabled = true
+                customView.confirmButton.backgroundColor = .defaultColor(ColorName.defaultWhite)
+            }
+        }else{
+            if customView.textField.text!.count < 2{
+                customView.confirmButton.isEnabled = false
+                customView.confirmButton.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
+            }
+            else{
+                customView.confirmButton.isEnabled = true
+                customView.confirmButton.backgroundColor = .defaultColor(ColorName.defaultWhite)
+            }
+        }
+        return true
     }
 }

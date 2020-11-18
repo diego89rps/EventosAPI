@@ -17,10 +17,10 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        //goToResume()
+        goToResume()
         //goToMap()
         //goToDetails()
-        goToName()
+        //goToName()
     }
     
     func goToResume() {
@@ -46,11 +46,15 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func goToEmail(viewModel : SettingsViewModel) {
+        let vc = EmailViewController(with: viewModel)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
 
     func popToRoot() {
-//        let vc = ResponsibleResumeTabBarController()
-//        vc.coordinator = self
-//        navigationController.popToRootViewController(animated: true)
+        navigationController.popToRootViewController(animated: true)
     }
     
     //MARK:

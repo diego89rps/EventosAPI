@@ -7,16 +7,16 @@
 
 import UIKit
 
-class NameView: UIView, ViewCodeType {
+class EmailView: UIView, ViewCodeType {
     
     // MARK: View
     let title: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.textColor = .defaultColor(.defaultWhite)
-        $0.font = .averta(.extra_bold, withSize: 28)
+        $0.font = .averta(.semibold, withSize: 28)
         $0.numberOfLines = 0
         $0.textAlignment = .center
-        $0.text = "Para o que você\nestá economizando?"
+        $0.text = "Qual o seu e-mail?"
         return $0
     }(UILabel())
     
@@ -24,18 +24,22 @@ class NameView: UIView, ViewCodeType {
         $0.autocapitalizationType = .none
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.borderStyle = .none
-        $0.font = .averta(.extra_bold, withSize: 24)
-        $0.textColor = .white
+        $0.font = .averta(.regular, withSize: 24)
+        $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         $0.autocorrectionType = .no
+        $0.placeholder = "email@dominio.com"
         return $0
     }(UITextField())
     
     let confirmButton: UIButton = {
-        $0.layer.masksToBounds = true
-        $0.clipsToBounds = true
-        $0.backgroundColor = .defaultColor(ColorName.defaultWhite)
-        $0.isHidden = true
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.setTitle("Confirmar", for: .normal)
+        $0.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
+        $0.titleLabel?.font = .averta(.semibold, withSize: 16)
+        $0.titleLabel?.textAlignment = .left
+        $0.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
+        $0.layer.cornerRadius = 12
         return $0
     }(UIButton())
     
@@ -43,6 +47,7 @@ class NameView: UIView, ViewCodeType {
     let stackView: UIStackView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.axis = .vertical
+        $0.spacing = 70
         return $0
     }(UIStackView())
     
@@ -106,8 +111,9 @@ class NameView: UIView, ViewCodeType {
     
     private func setupConfirmButton() {
         NSLayoutConstraint.activate([
-            confirmButton.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 28),
+            confirmButton.centerYAnchor.constraint(equalTo: centerYAnchor),
             confirmButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            confirmButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             confirmButton.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
