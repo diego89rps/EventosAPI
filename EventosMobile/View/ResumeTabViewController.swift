@@ -12,8 +12,8 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     var coordinator: MainCoordinator?
     //let disposeBag = DisposeBag()
-    let mainTab = UIViewController()
-    let settingsTab = UIViewController()
+    let mainTab = ResumeViewController()
+    let settingsTab = SettingsViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,15 +30,21 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     }
     
     private func setupTabBarLayout() {
-        UITabBar.appearance().tintColor = .black
+        UITabBar.appearance().tintColor = .defaultColor(ColorName.defaultDarkBlue)
         
         let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedString.Key.font: UIFont.averta(.extra_bold, withSize: 10)]
+        let attributes = [NSAttributedString.Key.font: UIFont.averta(.semibold, withSize: 10)]
         appearance.setTitleTextAttributes(attributes, for: .normal)
     }
     
     private func bindInputs() {
-
+        mainTab.detailsCallback = {
+            self.showDetails(with: $0, image: $1)
+        }
+    }
+    
+    private func showDetails(with title: String, image: String) {
+        self.coordinator?.goToDetails(with: title, image: image)
     }
     
     private func addTabs() {
@@ -56,15 +62,15 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     // MARK: Children tab(1)
     private func setupTabOne() {
-        let item = UITabBarItem(title: "main",
-                                image: UIImage(named: "filhosTabItem"),
-                                selectedImage: UIImage(named: "filhosSelectedItem"))
+        let item = UITabBarItem(title: "eventos",
+                                image: UIImage(named: "resumeTabItem"),
+                                selectedImage: UIImage(named: "resumeSelected"))
         mainTab.tabBarItem = item
     }
     
     // MARK: Notifications tab(2)
     private func setupTabTwo() {
-        let item = UITabBarItem(title: "Notificações", image: UIImage(named: "notificationsTabItem"), selectedImage: UIImage(named: "notificationsSelected"))
+        let item = UITabBarItem(title: "configurações", image: UIImage(named: "settingsTabItem"), selectedImage: UIImage(named: "settingsSelected"))
         settingsTab.tabBarItem = item
     }
     

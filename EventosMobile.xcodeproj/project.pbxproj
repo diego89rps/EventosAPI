@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FC8A4002564B988002C427B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A3FF2564B988002C427B /* SettingsView.swift */; };
+		9FC8A4052564B9A2002C427B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4042564B9A2002C427B /* SettingsViewController.swift */; };
+		9FC8A40D2564CAF8002C427B /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A40C2564CAF8002C427B /* NameView.swift */; };
+		9FC8A4152564CB08002C427B /* NameViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4142564CB08002C427B /* NameViewCotroller.swift */; };
+		9FC8A41A2564CB17002C427B /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A4192564CB17002C427B /* EmailView.swift */; };
+		9FC8A41F2564CB26002C427B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A41E2564CB26002C427B /* EmailViewController.swift */; };
 		9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22D2562CD0400875C59 /* AppDelegate.swift */; };
 		9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */; };
 		9FE9A2372562CD0600875C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2362562CD0600875C59 /* Assets.xcassets */; };
@@ -35,6 +41,20 @@
 		9FE9A2C52562DEC800875C59 /* Averta-Extra-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B52562DEC700875C59 /* Averta-Extra-Bold.otf */; };
 		9FE9A2C62562DEC800875C59 /* Averta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B62562DEC700875C59 /* Averta-Bold.otf */; };
 		9FE9A2C72562DEC800875C59 /* Averta.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9A2B72562DEC700875C59 /* Averta.otf */; };
+		9FE9A2CC2562F00A00875C59 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2CB2562F00A00875C59 /* ResumeView.swift */; };
+		9FE9A2D12562F02100875C59 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2D02562F02100875C59 /* ResumeViewController.swift */; };
+		9FE9A2D62562F22D00875C59 /* AppDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2D52562F22D00875C59 /* AppDefaultViewController.swift */; };
+		9FE9A2DB2562F57600875C59 /* ResumeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2DA2562F57600875C59 /* ResumeViewCell.swift */; };
+		9FE9A2E52563305400875C59 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2E42563305400875C59 /* MapView.swift */; };
+		9FE9A2EA2563306C00875C59 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2E92563306C00875C59 /* MapViewController.swift */; };
+		9FE9A2EF2563357900875C59 /* EventAdress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2EE2563357900875C59 /* EventAdress.swift */; };
+		9FE9A2F425635D0100875C59 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2F325635D0100875C59 /* MapViewModel.swift */; };
+		9FE9A2FB25635DDA00875C59 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2FA25635DDA00875C59 /* DetailsView.swift */; };
+		9FE9A30025635DF100875C59 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A2FF25635DF100875C59 /* DetailsViewController.swift */; };
+		9FE9A30525635E4C00875C59 /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */; };
+		9FE9A30A25635E6400875C59 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A30925635E6400875C59 /* DetailsViewModel.swift */; };
+		9FE9A3102563684700875C59 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE9A30F2563684700875C59 /* RxCocoa */; };
+		9FE9A3122563684700875C59 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE9A3112563684700875C59 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +75,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FC8A3F82564A3B3002C427B /* EventosMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventosMobile.entitlements; sourceTree = "<group>"; };
+		9FC8A3FF2564B988002C427B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9FC8A4042564B9A2002C427B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9FC8A40C2564CAF8002C427B /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		9FC8A4142564CB08002C427B /* NameViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewCotroller.swift; sourceTree = "<group>"; };
+		9FC8A4192564CB17002C427B /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		9FC8A41E2564CB26002C427B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		9FE9A22A2562CD0400875C59 /* EventosMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventosMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE9A22D2562CD0400875C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +116,18 @@
 		9FE9A2B52562DEC700875C59 /* Averta-Extra-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Extra-Bold.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Extra-Bold.otf"; sourceTree = "<group>"; };
 		9FE9A2B62562DEC700875C59 /* Averta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Averta-Bold.otf"; path = "../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta-Bold.otf"; sourceTree = "<group>"; };
 		9FE9A2B72562DEC700875C59 /* Averta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Averta.otf; path = ../../../../../../Dev/AgidMobile/AgidMobile/AgidMobile/Components/Support/Fonts/Averta/Averta.otf; sourceTree = "<group>"; };
+		9FE9A2CB2562F00A00875C59 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
+		9FE9A2D02562F02100875C59 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		9FE9A2D52562F22D00875C59 /* AppDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaultViewController.swift; sourceTree = "<group>"; };
+		9FE9A2DA2562F57600875C59 /* ResumeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewCell.swift; sourceTree = "<group>"; };
+		9FE9A2E42563305400875C59 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9FE9A2E92563306C00875C59 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9FE9A2EE2563357900875C59 /* EventAdress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdress.swift; sourceTree = "<group>"; };
+		9FE9A2F325635D0100875C59 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		9FE9A2FA25635DDA00875C59 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		9FE9A2FF25635DF100875C59 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewModel.swift; sourceTree = "<group>"; };
+		9FE9A30925635E6400875C59 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE9A3122563684700875C59 /* RxSwift in Frameworks */,
+				9FE9A3102563684700875C59 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +157,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FC8A4092564CABF002C427B /* Register Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9FC8A40B2564CADC002C427B /* Email */,
+				9FC8A40A2564CAD2002C427B /* Name */,
+			);
+			path = "Register Flow";
+			sourceTree = "<group>";
+		};
+		9FC8A40A2564CAD2002C427B /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				9FC8A40C2564CAF8002C427B /* NameView.swift */,
+				9FC8A4142564CB08002C427B /* NameViewCotroller.swift */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		9FC8A40B2564CADC002C427B /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				9FC8A4192564CB17002C427B /* EmailView.swift */,
+				9FC8A41E2564CB26002C427B /* EmailViewController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
 		9FE9A2212562CD0400875C59 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +207,7 @@
 		9FE9A22C2562CD0400875C59 /* EventosMobile */ = {
 			isa = PBXGroup;
 			children = (
+				9FC8A3F82564A3B3002C427B /* EventosMobile.entitlements */,
 				9FE9A28E2562DD6A00875C59 /* Components */,
 				9FE9A26F2562D2CC00875C59 /* View */,
 				9FE9A2702562D2D700875C59 /* ViewModel */,
@@ -173,6 +242,11 @@
 		9FE9A26F2562D2CC00875C59 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9FC8A4092564CABF002C427B /* Register Flow */,
+				9FE9A2F925635DC200875C59 /* Details */,
+				9FE9A2F825635D2800875C59 /* Settings */,
+				9FE9A2E32563304000875C59 /* Map */,
+				9FE9A2E22563302600875C59 /* Resume */,
 				9FE9A2802562D47300875C59 /* ResumeTabViewController.swift */,
 			);
 			path = View;
@@ -181,6 +255,9 @@
 		9FE9A2702562D2D700875C59 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9FE9A2F325635D0100875C59 /* MapViewModel.swift */,
+				9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */,
+				9FE9A30925635E6400875C59 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +273,7 @@
 		9FE9A2722562D30300875C59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9FE9A2EE2563357900875C59 /* EventAdress.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +303,7 @@
 			children = (
 				9FE9A2912562DDB100875C59 /* UIFontExtensions.swift */,
 				9FE9A29A2562DDDC00875C59 /* UIColorExtension.swift */,
+				9FE9A2D52562F22D00875C59 /* AppDefaultViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +331,43 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		9FE9A2E22563302600875C59 /* Resume */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2CB2562F00A00875C59 /* ResumeView.swift */,
+				9FE9A2DA2562F57600875C59 /* ResumeViewCell.swift */,
+				9FE9A2D02562F02100875C59 /* ResumeViewController.swift */,
+			);
+			path = Resume;
+			sourceTree = "<group>";
+		};
+		9FE9A2E32563304000875C59 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2E42563305400875C59 /* MapView.swift */,
+				9FE9A2E92563306C00875C59 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9FE9A2F825635D2800875C59 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9FC8A3FF2564B988002C427B /* SettingsView.swift */,
+				9FC8A4042564B9A2002C427B /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9FE9A2F925635DC200875C59 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9A2FA25635DDA00875C59 /* DetailsView.swift */,
+				9FE9A2FF25635DF100875C59 /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +384,10 @@
 			dependencies = (
 			);
 			name = EventosMobile;
+			packageProductDependencies = (
+				9FE9A30F2563684700875C59 /* RxCocoa */,
+				9FE9A3112563684700875C59 /* RxSwift */,
+			);
 			productName = EventosMobile;
 			productReference = 9FE9A22A2562CD0400875C59 /* EventosMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +459,9 @@
 				Base,
 			);
 			mainGroup = 9FE9A2212562CD0400875C59;
+			packageReferences = (
+				9FE9A30E2563684700875C59 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9FE9A22B2562CD0400875C59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,14 +520,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC8A4002564B988002C427B /* SettingsView.swift in Sources */,
+				9FE9A2D62562F22D00875C59 /* AppDefaultViewController.swift in Sources */,
 				9FE9A2812562D47300875C59 /* ResumeTabViewController.swift in Sources */,
 				9FE9A29B2562DDDC00875C59 /* UIColorExtension.swift in Sources */,
+				9FE9A2CC2562F00A00875C59 /* ResumeView.swift in Sources */,
+				9FE9A2E52563305400875C59 /* MapView.swift in Sources */,
+				9FE9A30525635E4C00875C59 /* ResumeViewModel.swift in Sources */,
+				9FE9A2D12562F02100875C59 /* ResumeViewController.swift in Sources */,
+				9FE9A30A25635E6400875C59 /* DetailsViewModel.swift in Sources */,
 				9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */,
+				9FE9A2F425635D0100875C59 /* MapViewModel.swift in Sources */,
+				9FC8A40D2564CAF8002C427B /* NameView.swift in Sources */,
 				9FE9A2922562DDB100875C59 /* UIFontExtensions.swift in Sources */,
 				9FE9A2302562CD0400875C59 /* SceneDelegate.swift in Sources */,
+				9FC8A4052564B9A2002C427B /* SettingsViewController.swift in Sources */,
 				9FE9A27C2562D36500875C59 /* MainCoodinator.swift in Sources */,
+				9FE9A30025635DF100875C59 /* DetailsViewController.swift in Sources */,
+				9FE9A2EF2563357900875C59 /* EventAdress.swift in Sources */,
 				9FE9A2742562D32A00875C59 /* Coodinator.swift in Sources */,
+				9FC8A41F2564CB26002C427B /* EmailViewController.swift in Sources */,
+				9FC8A41A2564CB17002C427B /* EmailView.swift in Sources */,
 				9FE9A2A32562DE0800875C59 /* ViewCode.swift in Sources */,
+				9FC8A4152564CB08002C427B /* NameViewCotroller.swift in Sources */,
+				9FE9A2FB25635DDA00875C59 /* DetailsView.swift in Sources */,
+				9FE9A2DB2562F57600875C59 /* ResumeViewCell.swift in Sources */,
+				9FE9A2EA2563306C00875C59 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +713,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EventosMobile/EventosMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYX5QCYS9V;
 				INFOPLIST_FILE = EventosMobile/Info.plist;
@@ -592,6 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EventosMobile/EventosMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYX5QCYS9V;
 				INFOPLIST_FILE = EventosMobile/Info.plist;
@@ -731,6 +874,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FE9A30E2563684700875C59 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FE9A30F2563684700875C59 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FE9A30E2563684700875C59 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		9FE9A3112563684700875C59 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FE9A30E2563684700875C59 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FE9A2222562CD0400875C59 /* Project object */;
 }

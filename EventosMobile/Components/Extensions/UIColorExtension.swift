@@ -8,17 +8,12 @@
 import UIKit
 
 public enum ColorName: String {
-    case defaultGreen = "defaultGreen"
-    case defaultMediumGray = "defaultMediumGray"
-    case defaultPurple = "defaultPurple"
-    case defaultHeavyPurple = "defaultHeavyPurple"
-    case defaultStrongGray = "defaultStrongGray"
-    case defaultWeakGray = "defaultWeakGray"
+    case defaultDarkBlue = "defaultDarkBlue"
+    case defaultLightBlue = "defaultLightBlue"
+    case defaultMediumBlue = "defaultMediumBlue"
+
     case defaultWhite = "defaultWhite"
-    case defaultIceWhite = "defaultIceWhite"
-    case bottomSheetLightGray = "bottomSheetLightGray"
-    case defaultRed = "defaultRed"
-    case cellTitleGray = "cellTitleGray"
+
 }
 
 extension UIColor {
