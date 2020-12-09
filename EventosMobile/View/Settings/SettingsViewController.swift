@@ -26,6 +26,8 @@ class SettingsViewController:  AppDefaultViewController {
     override func viewDidAppear(_ animated: Bool) {
         if viewModel.userResgister(){
             userRegister()
+        } else {
+            userNotRegister()
         }
     }
     
@@ -36,6 +38,15 @@ class SettingsViewController:  AppDefaultViewController {
         customView.button.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
         customView.button.setTitle("Sair", for: .normal)
         customView.button.setTitleColor(.defaultColor(ColorName.defaultWhite), for: .normal)
+    }
+    
+    private func userNotRegister(){
+        customView.image.image = #imageLiteral(resourceName: "notRegister")
+        customView.name.text = "Ops!"
+        customView.email.text = "Você não possui cadastro! Cadastre-se para participar de eventos."
+        customView.button.backgroundColor = .defaultColor(ColorName.defaultWhite)
+        customView.button.setTitle("Realizar cadastro", for: .normal)
+        customView.button.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
     }
 }
 

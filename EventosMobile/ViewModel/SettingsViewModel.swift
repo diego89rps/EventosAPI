@@ -27,6 +27,11 @@ class SettingsViewModel{
         UserDefaults.standard.set(user.email, forKey: "userEmail")
     }
     
+    func deleteRegister() {
+        UserDefaults.standard.set(nil, forKey: "userName")
+        UserDefaults.standard.set(nil, forKey: "userEmail")
+    }
+    
     func getName() -> String {
         return user.name  ?? "user not found"
     }

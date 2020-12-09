@@ -22,8 +22,15 @@ class ResumeViewController:  AppDefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.setupCellsData()
         setupTableView()
+        viewModel.requestEvents() { (results) in
+            switch results {
+            case .success(_):
+                self.customView.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     private func showDetails(with title: String, image: String) {
@@ -40,7 +47,7 @@ extension ResumeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.data.count
+        viewModel.events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,7 +62,7 @@ extension ResumeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showDetails(with: viewModel.data[indexPath.row].title, image: viewModel.data[indexPath.row].title)
+        showDetails(with: viewModel.events[indexPath.row].title, image: viewModel.events[indexPath.row].title)
     }
     
 }

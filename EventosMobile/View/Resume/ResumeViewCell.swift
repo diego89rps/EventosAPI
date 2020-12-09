@@ -24,7 +24,7 @@ class ResumeViewCell: UITableViewCell {
     
     let leftTitle: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.numberOfLines = 0
+        //$0.numberOfLines = 0
         $0.font = .averta(.semibold, withSize: 22)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .left

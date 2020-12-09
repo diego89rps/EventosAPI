@@ -40,7 +40,7 @@ class DetailsView: UIView, ViewCodeType {
         $0.numberOfLines = 0
         return $0
     }(UILabel())
-    
+
     let checkInBtn: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Fazer Check-in", for: .normal)
