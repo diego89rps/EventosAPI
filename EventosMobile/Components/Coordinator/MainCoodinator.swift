@@ -27,15 +27,13 @@ class MainCoordinator: Coordinator {
     }
     
     func goToDetails(with viewModel : ResumeViewModel, index : Int) {
-        let vc = DetailsViewController()
+        let vc = DetailsViewController(viewModel: viewModel, index: index)
         vc.coordinator = self
-        vc.viewModel = viewModel
-        vc.index = index
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func goToMap() {
-        let vc = MapViewController()
+    func goToMap(with longitude : Double, latitude : Double) {
+        let vc = MapViewController(latitude : latitude, longitude : longitude)
         vc.coordinator = self
         navigationController.present(vc, animated: true, completion: nil)
     }

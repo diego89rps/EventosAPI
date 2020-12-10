@@ -13,6 +13,7 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     var coordinator: MainCoordinator?
     let disposeBag = DisposeBag()
+    
     let mainTab = ResumeViewController()
     let settingsTab = SettingsViewController()
     
@@ -42,6 +43,7 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
         mainTab.detailsCallback = {
             self.showDetails(with: $0)
         }
+        
         settingsTab
             .customView
             .button

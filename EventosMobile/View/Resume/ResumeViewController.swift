@@ -10,6 +10,7 @@ import UIKit
 class ResumeViewController:  AppDefaultViewController {
     typealias CustomView = ResumeView
     typealias ViewModel = ResumeViewModel
+    
     var detailsCallback: (Int) -> Void = { _ in }
     
     let customView = CustomView()
@@ -36,7 +37,6 @@ class ResumeViewController:  AppDefaultViewController {
     private func showDetails(with index : Int) {
             detailsCallback(index)
         }
-    
 }
 
 extension ResumeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -57,13 +57,11 @@ extension ResumeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.date.text = viewModel.getDateFormat(indexPath: indexPath.row)
         cell.cost.text = viewModel.getCost(indexPath: indexPath.row)
 
-
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         showDetails(with: indexPath.row)
     }
-    
 }
 

@@ -54,6 +54,14 @@ class ResumeViewModel{
         return events[indexPath].description
     }
     
+    func getLatitude(indexPath: Int) -> Double{
+        return events[indexPath].latitude
+    }
+    
+    func getLongitude(indexPath: Int) -> Double{
+        return events[indexPath].longitude
+    }
+    
     func getImage(indexPath : Int, completion: @escaping (Result<Data, Error>) -> ()) {
         self.eventData.resquestImage(url: events[indexPath].image){ (results) in
             switch results {

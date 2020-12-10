@@ -17,8 +17,18 @@ class DetailsViewController: AppDefaultViewController {
     var coordinator: MainCoordinator?
     let customView = CustomView()
     let disposeBag = DisposeBag()
-    var viewModel : ResumeViewModel?
-    var index : Int?
+    let viewModel : ResumeViewModel
+    let index : Int
+    
+    init(viewModel: ResumeViewModel, index: Int) {
+        self.viewModel = viewModel
+        self.index = index
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         super.loadView()
@@ -32,11 +42,11 @@ class DetailsViewController: AppDefaultViewController {
     }
     
     private func setupDetails() {
-        self.title = viewModel?.getTitle(indexPath: index!)
-        customView.dateAndCost.text = "\(viewModel?.getDateFormat(indexPath: index!) ?? "") - \(viewModel?.getCost(indexPath: index!) ?? "")"
-        customView.textView.text = viewModel?.getDescription(indexPath: index!)
+        self.title = viewModel.getTitle(indexPath: index)
+        customView.dateAndCost.text = "\(viewModel.getDateFormat(indexPath: index)) - \(viewModel.getCost(indexPath: index))"
+        customView.textView.text = viewModel.getDescription(indexPath: index)
         
-        viewModel?.getImage(indexPath: index!) { (results) in
+        viewModel.getImage(indexPath: index) { (results) in
             switch results {
             case .success(let data):
                 self.customView.image.image = UIImage(data: data)
@@ -58,6 +68,9 @@ class DetailsViewController: AppDefaultViewController {
     }
     
     private func goToMap() {
-        self.coordinator?.goToMap()
+        let longitude = viewModel.getLongitude(indexPath: index)
+        let latitude = viewModel.getLatitude(indexPath: index)
+
+        self.coordinator?.goToMap(with : longitude, latitude : latitude)
     }
 }

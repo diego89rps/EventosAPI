@@ -13,27 +13,40 @@ import RxCocoa
 
 class MapViewController: AppDefaultViewController {
     typealias CustomView = MapView
+    typealias ViewModel = MapViewModel
     
     var coordinator: MainCoordinator?
-    let customView = CustomView()
     let disposeBag = DisposeBag()
+    
+    let customView = CustomView()
+    let viewModel : MapViewModel
+    
+    init(latitude: Double, longitude: Double) {
+        self.viewModel = ViewModel(latitude: latitude, longitude: longitude)
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         super.loadView()
         view = customView
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
-                let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: span)
-        customView.mapView.setRegion(region, animated: true)
-        
-        let london = EventAdress(name: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275))
-        
-        customView.mapView.addAnnotation(london)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupMap()
         bind()
+    }
+    
+    func setupMap() {
+        let region = viewModel.getRegion()
+        customView.mapView.setRegion(region, animated: true)
+        
+        let eventAnotation = viewModel.getAnotation()
+        customView.mapView.addAnnotation(eventAnotation)
     }
     
     func bind() {
@@ -44,7 +57,6 @@ class MapViewController: AppDefaultViewController {
             .bind {
                 self.dismiss(animated: true)
             }.disposed(by: disposeBag)
-
     }
 }
 
