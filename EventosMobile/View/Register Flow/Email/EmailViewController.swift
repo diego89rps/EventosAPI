@@ -40,24 +40,18 @@ class EmailViewController: AppDefaultViewController {
     }
     
     private func bind() {
-        bindInputs()
-    }
-    
-    private func bindInputs() {
         customView
             .confirmButton
             .rx
             .tap
             .bind {
-                self.setEmail()
+                self.finishResgister()
             }.disposed(by: disposeBag)
-
     }
     
-    func setEmail(){
+    func finishResgister(){
         let email = self.customView.textField.text!
         viewModel.setEmail(email: email)
-        print("\(viewModel.getName()) - \(viewModel.getEmail())")
         viewModel.createRegister()
         self.coordinator?.popToRoot()
     }

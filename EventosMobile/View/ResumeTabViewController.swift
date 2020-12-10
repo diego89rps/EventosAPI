@@ -59,14 +59,21 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     }
     
     private func showResgisterName() {
-        if let _ = UserDefaults.standard.string(forKey: "userName"),
-           let _ = UserDefaults.standard.string(forKey: "userEmail") {
-            UserDefaults.standard.set(nil, forKey: "userName")
-            UserDefaults.standard.set(nil, forKey: "userEmail")
+        if settingsTab.viewModel.status() {
+            settingsTab.viewModel.deleteRegister()
             settingsTab.viewDidAppear(true)
         } else {
             self.coordinator?.goToName()
+
         }
+//
+//        if let _ = UserDefaults.standard.string(forKey: "userName"),
+//           let _ = UserDefaults.standard.string(forKey: "userEmail") {
+//            UserDefaults.standard.set(nil, forKey: "userName")
+//            UserDefaults.standard.set(nil, forKey: "userEmail")
+//        } else {
+//            self.coordinator?.goToName()
+//        }
     }
     
     private func addTabs() {

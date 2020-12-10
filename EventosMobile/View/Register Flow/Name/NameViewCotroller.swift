@@ -18,7 +18,6 @@ class NameViewController: AppDefaultViewController {
     var coordinator: MainCoordinator?
     let disposeBag = DisposeBag()
     
-    
     override func loadView() {
         view = customView
     }
@@ -32,22 +31,16 @@ class NameViewController: AppDefaultViewController {
     }
     
     private func bind() {
-        bindInputs()
-    }
-    
-    private func bindInputs() {
         customView
             .confirmButton
             .rx
             .tap
             .bind {
-                self.setName()
+                self.continueResgister()
             }.disposed(by: disposeBag)
-
-
     }
     
-    func setName(){
+    func continueResgister(){
         let name = self.customView.textField.text!
         viewModel.setName(name: name)
         self.coordinator?.goToEmail(viewModel: viewModel)
