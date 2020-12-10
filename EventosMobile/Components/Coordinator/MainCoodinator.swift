@@ -18,9 +18,6 @@ class MainCoordinator: Coordinator {
     
     func start() {
         goToResume()
-        //goToMap()
-        //goToDetails()
-        //goToName()
     }
     
     func goToResume() {
@@ -29,9 +26,11 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func goToDetails(with: String, image: String) {
+    func goToDetails(with viewModel : ResumeViewModel, index : Int) {
         let vc = DetailsViewController()
         vc.coordinator = self
+        vc.viewModel = viewModel
+        vc.index = index
         navigationController.pushViewController(vc, animated: true)
     }
     

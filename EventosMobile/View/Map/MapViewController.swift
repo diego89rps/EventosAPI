@@ -8,12 +8,15 @@
 import Foundation
 import UIKit
 import MapKit
+import RxSwift
+import RxCocoa
 
 class MapViewController: AppDefaultViewController {
     typealias CustomView = MapView
     
     var coordinator: MainCoordinator?
     let customView = CustomView()
+    let disposeBag = DisposeBag()
     
     override func loadView() {
         super.loadView()
@@ -30,7 +33,18 @@ class MapViewController: AppDefaultViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind()
+    }
+    
+    func bind() {
+        customView
+            .closeButton
+            .rx
+            .tap
+            .bind {
+                self.dismiss(animated: true)
+            }.disposed(by: disposeBag)
+
     }
 }
 

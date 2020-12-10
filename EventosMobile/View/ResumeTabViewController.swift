@@ -40,7 +40,7 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     private func bindInputs() {
         mainTab.detailsCallback = {
-            self.showDetails(with: $0, image: $1)
+            self.showDetails(with: $0)
         }
         settingsTab
             .customView
@@ -52,8 +52,8 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
             }.disposed(by: disposeBag)
     }
     
-    private func showDetails(with title: String, image: String) {
-        self.coordinator?.goToDetails(with: title, image: image)
+    private func showDetails(with index : Int) {
+        self.coordinator?.goToDetails(with : mainTab.viewModel, index: index)
     }
     
     private func showResgisterName() {

@@ -7,14 +7,7 @@
 
 import Foundation
 
-struct TeachCell {
-    var title: String
-    var custo: Double
-    var date : Int
-}
-
 class ResumeViewModel{
-    var data: [TeachCell]!
     var events : [Event] = []
     let eventData : EventData = EventData()
     
@@ -50,5 +43,25 @@ class ResumeViewModel{
         let formattedDate = format.string(from: date)
         
         return formattedDate
+    }
+    
+    //MARK: DETAILS
+    func getImageURL(indexPath: Int) -> String{
+        return events[indexPath].image
+    }
+    
+    func getDescription(indexPath: Int) -> String{
+        return events[indexPath].description
+    }
+    
+    func getImage(indexPath : Int, completion: @escaping (Result<Data, Error>) -> ()) {
+        self.eventData.resquestImage(url: events[indexPath].image){ (results) in
+            switch results {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }

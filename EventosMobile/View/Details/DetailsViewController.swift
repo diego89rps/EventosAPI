@@ -17,20 +17,33 @@ class DetailsViewController: AppDefaultViewController {
     var coordinator: MainCoordinator?
     let customView = CustomView()
     let disposeBag = DisposeBag()
+    var viewModel : ResumeViewModel?
+    var index : Int?
     
     override func loadView() {
         super.loadView()
         view = customView
-//        self.title = "DETALHE"
-        
+        setupDetails()
         bind()
-        customView.image.image = #imageLiteral(resourceName: "settingsSelected")
-        customView.textView.text = "O Patas Dadas estará na Redenção, nesse domingo, com cães para adoção e produtos à venda!\n\nNa ocasião, teremos bottons, bloquinhos e camisetas!\n\nTraga seu Pet, os amigos e o chima, e venha aproveitar esse dia de sol com a gente e com alguns de nossos peludinhos - que estarão prontinhos para ganhar o ♥ de um humano bem legal pra chamar de seu. \n\nAceitaremos todos os tipos de doação:\n- guias e coleiras em bom estado\n- ração (as que mais precisamos no momento são sênior e filhote)\n- roupinhas \n- cobertas \n- remédios dentro do prazo de validade"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    private func setupDetails() {
+        self.title = viewModel?.getTitle(indexPath: index!)
+        customView.dateAndCost.text = "\(viewModel?.getDateFormat(indexPath: index!) ?? "") - \(viewModel?.getCost(indexPath: index!) ?? "")"
+        customView.textView.text = viewModel?.getDescription(indexPath: index!)
         
+        viewModel?.getImage(indexPath: index!) { (results) in
+            switch results {
+            case .success(let data):
+                self.customView.image.image = UIImage(data: data)
+            case .failure(_):
+                self.customView.image.image = #imageLiteral(resourceName: "notRegister")
+            }
+        }
     }
     
     private func bind() {

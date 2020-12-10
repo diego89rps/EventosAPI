@@ -19,6 +19,10 @@ class MapView: UIView, ViewCodeType {
     let closeButton: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setImage(UIImage(named: "closePresentView")!, for: .normal)
+        $0.backgroundColor = .defaultColor(ColorName.defaultWhite)
+        $0.layer.borderWidth = 2
+        $0.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        $0.layer.cornerRadius = 15
         return $0
     }(UIButton())
     
@@ -64,6 +68,8 @@ class MapView: UIView, ViewCodeType {
         NSLayoutConstraint.activate([
             closeButton.topAnchor.constraint(equalTo: mapView.topAnchor, constant: 20),
             closeButton.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -20),
+            closeButton.heightAnchor.constraint(equalToConstant: 30),
+            closeButton.widthAnchor.constraint(equalToConstant: 30)
         ])
     }
 }

@@ -34,5 +34,17 @@ class EventData {
             }
         }.resume()
     }
+    
+    public func resquestImage(url : String , completion: @escaping (Result<Data, Error>) -> ()) {
+        if let data = try? Data.init(contentsOf: URL(string: url)!) {
+            DispatchQueue.main.async {
+                completion(.success(data))
+            }
+        }else {
+            DispatchQueue.main.async {
+                completion(.failure(NSError() as Error))
+            }
+        }
+    }
 }
 
