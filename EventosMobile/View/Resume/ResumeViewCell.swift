@@ -51,8 +51,6 @@ class ResumeViewCell: UITableViewCell {
         return $0
     }(UILabel())
     
-
-    
     // MARK: Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

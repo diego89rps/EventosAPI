@@ -12,7 +12,6 @@ class ResumeViewModel{
     let eventData : EventData = EventData()
     
     func requestEvents(completion: @escaping (Result<Int, Error>) -> ()) {
-
         self.eventData.resquestEvent(){ (results) in
             switch results {
             case .success(let events):
@@ -43,6 +42,21 @@ class ResumeViewModel{
         let formattedDate = format.string(from: date)
         
         return formattedDate
+    }
+    
+    //MARK: CHECK-IN
+    func checkInOnEvent(indexPath: Int, completion: @escaping (Result<Int, Error>) -> ()) {
+        if let name = UserDefaults.standard.string(forKey: "userName"),
+           let email = UserDefaults.standard.string(forKey: "userEmail"){
+            self.eventData.postCheckIn(eventId: events[indexPath].id, name: name, email: email){ (results) in
+                switch results {
+                case .success(_):
+                    completion(.success(1))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
+        }
     }
     
     //MARK: DETAILS
