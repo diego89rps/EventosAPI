@@ -41,7 +41,8 @@ class DetailsViewController: AppDefaultViewController {
             case .success(let data):
                 self.customView.image.image = UIImage(data: data)
             case .failure(_):
-                self.customView.image.image = #imageLiteral(resourceName: "notRegister")
+                self.customView.image.image = #imageLiteral(resourceName: "alert")
+                self.customView.image.contentMode = .scaleAspectFit
             }
         }
     }

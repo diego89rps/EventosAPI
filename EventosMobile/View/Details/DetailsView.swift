@@ -21,6 +21,7 @@ class DetailsView: UIView, ViewCodeType {
 
     let image : UIImageView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.contentMode = .scaleAspectFill
         return $0
     }(UIImageView())
     
