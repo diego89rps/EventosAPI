@@ -44,21 +44,6 @@ class ResumeViewModel{
         return formattedDate
     }
     
-    //MARK: CHECK-IN
-    func checkInOnEvent(indexPath: Int, completion: @escaping (Result<Int, Error>) -> ()) {
-        if let name = UserDefaults.standard.string(forKey: "userName"),
-           let email = UserDefaults.standard.string(forKey: "userEmail"){
-            self.eventData.postCheckIn(eventId: events[indexPath].id, name: name, email: email){ (results) in
-                switch results {
-                case .success(_):
-                    completion(.success(1))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
-            }
-        }
-    }
-    
     //MARK: DETAILS
     func getImageURL(indexPath: Int) -> String{
         return events[indexPath].image
@@ -83,6 +68,21 @@ class ResumeViewModel{
                 completion(.success(data))
             case .failure(let error):
                 completion(.failure(error))
+            }
+        }
+    }
+    
+    //MARK: CHECK-IN
+    func checkInOnEvent(indexPath: Int, completion: @escaping (Result<Int, Error>) -> ()) {
+        if let name = UserDefaults.standard.string(forKey: "userName"),
+           let email = UserDefaults.standard.string(forKey: "userEmail"){
+            self.eventData.postCheckIn(eventId: events[indexPath].id, name: name, email: email){ (results) in
+                switch results {
+                case .success(_):
+                    completion(.success(1))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
             }
         }
     }

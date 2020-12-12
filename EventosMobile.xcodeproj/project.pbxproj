@@ -226,11 +226,12 @@
 			isa = PBXGroup;
 			children = (
 				9FC8A3F82564A3B3002C427B /* EventosMobile.entitlements */,
-				9FE9A28E2562DD6A00875C59 /* Components */,
+				9F63ACDC256D90DE00915F34 /* Network */,
+				9FE9A2712562D2EC00875C59 /* Coordinator */,
+				9FE9A28E2562DD6A00875C59 /* Resources */,
 				9FE9A26F2562D2CC00875C59 /* View */,
 				9FE9A2702562D2D700875C59 /* ViewModel */,
 				9FE9A2722562D30300875C59 /* Model */,
-				9F63ACDC256D90DE00915F34 /* Network */,
 				9FE9A22D2562CD0400875C59 /* AppDelegate.swift */,
 				9FE9A22F2562CD0400875C59 /* SceneDelegate.swift */,
 				9FE9A2362562CD0600875C59 /* Assets.xcassets */,
@@ -261,9 +262,8 @@
 		9FE9A26F2562D2CC00875C59 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9FC8A4092564CABF002C427B /* Register Flow */,
-				9FE9A2F925635DC200875C59 /* Details */,
 				9FE9A2F825635D2800875C59 /* Settings */,
+				9FE9A2F925635DC200875C59 /* Details */,
 				9FE9A2E32563304000875C59 /* Map */,
 				9FE9A2E22563302600875C59 /* Resume */,
 				9FE9A2802562D47300875C59 /* ResumeTabViewController.swift */,
@@ -274,10 +274,10 @@
 		9FE9A2702562D2D700875C59 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9FC8A4232564D65F002C427B /* SettingsViewModel.swift */,
+				9FE9A30925635E6400875C59 /* DetailsViewModel.swift */,
 				9FE9A2F325635D0100875C59 /* MapViewModel.swift */,
 				9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */,
-				9FE9A30925635E6400875C59 /* DetailsViewModel.swift */,
-				9FC8A4232564D65F002C427B /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,23 +293,22 @@
 		9FE9A2722562D30300875C59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9FE9A2EE2563357900875C59 /* EventAdress.swift */,
 				9FC8A4282564E24D002C427B /* User.swift */,
 				9F63ACD7256D8E6100915F34 /* Event.swift */,
+				9FE9A2EE2563357900875C59 /* EventAdress.swift */,
 				9F0781E32582005600F9C588 /* CheckIn.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9FE9A28E2562DD6A00875C59 /* Components */ = {
+		9FE9A28E2562DD6A00875C59 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				9FE9A2A72562DE8A00875C59 /* Font */,
 				9FE9A2902562DD9600875C59 /* Extensions */,
-				9FE9A2712562D2EC00875C59 /* Coordinator */,
 				9FE9A28F2562DD7300875C59 /* Protocols */,
 			);
-			path = Components;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9FE9A28F2562DD7300875C59 /* Protocols */ = {
@@ -376,6 +375,7 @@
 		9FE9A2F825635D2800875C59 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				9FC8A4092564CABF002C427B /* Register Flow */,
 				9FC8A3FF2564B988002C427B /* SettingsView.swift */,
 				9FC8A4042564B9A2002C427B /* SettingsViewController.swift */,
 			);
