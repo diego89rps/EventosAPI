@@ -11,6 +11,7 @@ class ResumeViewModel{
     var events : [Event] = []
     let eventData : EventData = EventData()
     
+    //MARK: RESUME VIEWCONTROLLER
     func requestEvents(completion: @escaping (Result<Int, Error>) -> ()) {
         self.eventData.resquestEvent(){ (results) in
             switch results {
@@ -44,7 +45,7 @@ class ResumeViewModel{
         return formattedDate
     }
     
-    //MARK: DETAILS
+    //MARK: DETAILS VIEWCONTROLLER
     func getImageURL(indexPath: Int) -> String{
         return events[indexPath].image
     }
@@ -70,6 +71,12 @@ class ResumeViewModel{
                 completion(.failure(error))
             }
         }
+    }
+    
+    func createShareContents(indexPath : Int) -> String {
+        let text = "Olá,\nVocé acaba de ser convidado(a) para o evento: \(events[indexPath].title)\n\n\(getDescription(indexPath: indexPath))\n\nData e Horário: \(getDateFormat(indexPath: indexPath))\nValor: \(getCost(indexPath: indexPath))\nLocal: http://maps.apple.com/?ll=\(getLatitude(indexPath: indexPath)),\(getLongitude(indexPath: indexPath))"
+        
+        return text
     }
     
     //MARK: CHECK-IN

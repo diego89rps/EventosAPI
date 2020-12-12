@@ -67,6 +67,14 @@ class DetailsViewController: AppDefaultViewController {
             }.disposed(by: disposeBag)
 
         customView
+            .shareBtn
+            .rx
+            .tap
+            .bind { [weak self] (_) in
+                   self?.shareEvent()
+            }.disposed(by: disposeBag)
+        
+        customView
             .mapBtn
             .rx
             .tap
@@ -75,6 +83,7 @@ class DetailsViewController: AppDefaultViewController {
             }.disposed(by: disposeBag)
     }
     
+    //MARK: ACTIONS FROM BUTTONS
     private func makeCheckIn(){
         if let _ = UserDefaults.standard.string(forKey: "userName"),
            let _ = UserDefaults.standard.string(forKey: "userEmail"){
@@ -82,6 +91,18 @@ class DetailsViewController: AppDefaultViewController {
         }else{
             checkInInvalidAlert()
         }
+    }
+    
+    private func shareEvent() {
+        let text = viewModel.createShareContents(indexPath : index)
+        
+        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     private func goToMap() {
