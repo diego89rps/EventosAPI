@@ -29,7 +29,7 @@ class ResumeViewModel{
     }
     
     func getCost(indexPath: Int) -> String{
-        let cost = "R$ \(events[indexPath].price)"
+        let cost = events[indexPath].price.formatToMoney(withPrefix: true)
         return cost
     }
     

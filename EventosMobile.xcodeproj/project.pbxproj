@@ -10,6 +10,7 @@
 		9F0781E42582005600F9C588 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0781E32582005600F9C588 /* CheckIn.swift */; };
 		9F0781F525858BA000F9C588 /* ResumeNoRegisterStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0781F425858BA000F9C588 /* ResumeNoRegisterStateView.swift */; };
 		9F078200258693F000F9C588 /* SettingsVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0781FF258693F000F9C588 /* SettingsVMTests.swift */; };
+		9F07820E2586966000F9C588 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07820D2586966000F9C588 /* DoubleExtension.swift */; };
 		9F63ACD8256D8E6100915F34 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63ACD7256D8E6100915F34 /* Event.swift */; };
 		9F63ACDE256D918000915F34 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63ACDD256D918000915F34 /* EventData.swift */; };
 		9FC8A4002564B988002C427B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8A3FF2564B988002C427B /* SettingsView.swift */; };
@@ -83,6 +84,7 @@
 		9F0781E32582005600F9C588 /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		9F0781F425858BA000F9C588 /* ResumeNoRegisterStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeNoRegisterStateView.swift; sourceTree = "<group>"; };
 		9F0781FF258693F000F9C588 /* SettingsVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVMTests.swift; sourceTree = "<group>"; };
+		9F07820D2586966000F9C588 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		9F63ACD7256D8E6100915F34 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F63ACDD256D918000915F34 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		9FC8A3F82564A3B3002C427B /* EventosMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventosMobile.entitlements; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				9FE9A2912562DDB100875C59 /* UIFontExtensions.swift */,
 				9FE9A29A2562DDDC00875C59 /* UIColorExtension.swift */,
 				9FE9A2D52562F22D00875C59 /* AppDefaultViewController.swift */,
+				9F07820D2586966000F9C588 /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				9FE9A2CC2562F00A00875C59 /* ResumeView.swift in Sources */,
 				9FE9A2E52563305400875C59 /* MapView.swift in Sources */,
 				9FE9A30525635E4C00875C59 /* ResumeViewModel.swift in Sources */,
+				9F07820E2586966000F9C588 /* DoubleExtension.swift in Sources */,
 				9FE9A2D12562F02100875C59 /* ResumeViewController.swift in Sources */,
 				9FE9A22E2562CD0400875C59 /* AppDelegate.swift in Sources */,
 				9FE9A2F425635D0100875C59 /* MapViewModel.swift in Sources */,
