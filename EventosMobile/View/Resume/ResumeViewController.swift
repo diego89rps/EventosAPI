@@ -8,11 +8,13 @@
 import UIKit
 
 class ResumeViewController:  AppDefaultViewController {
+    typealias CustomViewNoRegister = ResumeNoRegisterStateView
     typealias CustomView = ResumeView
     typealias ViewModel = ResumeViewModel
     
     var detailsCallback: (Int) -> Void = { _ in }
     
+    let customViewNoRegister = CustomViewNoRegister()
     let customView = CustomView()
     let viewModel = ViewModel()
     
@@ -24,12 +26,17 @@ class ResumeViewController:  AppDefaultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        loadRegisters()
+    }
+    
+    func loadRegisters() {
         viewModel.requestEvents() { (results) in
             switch results {
             case .success(_):
                 self.customView.tableView.reloadData()
-            case .failure(let error):
-                print(error)
+                self.customView.tableView.backgroundView = UIView()
+            case .failure(_):
+                self.customView.tableView.backgroundView = self.customViewNoRegister
             }
         }
     }

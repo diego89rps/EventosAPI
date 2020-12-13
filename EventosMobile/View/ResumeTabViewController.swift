@@ -52,6 +52,15 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
             .bind { [weak self] (_) in
                 self?.showResgisterName()
             }.disposed(by: disposeBag)
+        
+        mainTab
+            .customViewNoRegister
+            .reloadBtn
+            .rx
+            .tap
+            .bind { [weak self] (_) in
+                self?.mainTab.loadRegisters()
+            }.disposed(by: disposeBag)
     }
     
     private func showDetails(with index : Int) {

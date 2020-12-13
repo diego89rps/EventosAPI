@@ -36,7 +36,7 @@ class DetailsView: UIView, ViewCodeType {
     
     let textView: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = .averta(.regular, withSize: 15)
+        $0.font = .averta(.light, withSize: 16)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.numberOfLines = 0
         return $0
