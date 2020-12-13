@@ -16,11 +16,17 @@ class ResumeViewModel{
         self.eventData.resquestEvent(){ (results) in
             switch results {
             case .success(let events):
-                self.events = events
+                self.appendEvents(events: events)
                 completion(.success(1))
             case .failure(let error):
                 completion(.failure(error))
             }
+        }
+    }
+    
+    func appendEvents(events: [Event]){
+        for event in events{
+            self.events.append(event)
         }
     }
     
@@ -31,6 +37,10 @@ class ResumeViewModel{
     func getCost(indexPath: Int) -> String{
         let cost = events[indexPath].price.formatToMoney(withPrefix: true)
         return cost
+    }
+    
+    func getNumberOfEvents() -> Int {
+        return events.count
     }
     
     func getDateFormat(indexPath: Int) -> String {
@@ -62,6 +72,7 @@ class ResumeViewModel{
         return events[indexPath].longitude
     }
     
+    //MARK: DOWNLOAD EVENT'S IMAGE
     func getImage(indexPath : Int, completion: @escaping (Result<Data, Error>) -> ()) {
         self.eventData.resquestImage(url: events[indexPath].image){ (results) in
             switch results {
@@ -73,13 +84,14 @@ class ResumeViewModel{
         }
     }
     
+    //MARK: SHARE EVENT
     func createShareContents(indexPath : Int) -> String {
         let text = "Olá,\nVocé acaba de ser convidado(a) para o evento: \(events[indexPath].title)\n\n\(getDescription(indexPath: indexPath))\n\nData e Horário: \(getDateFormat(indexPath: indexPath))\nValor: \(getCost(indexPath: indexPath))\nLocal: http://maps.apple.com/?ll=\(getLatitude(indexPath: indexPath)),\(getLongitude(indexPath: indexPath))"
         
         return text
     }
     
-    //MARK: CHECK-IN
+    //MARK: CHECK-IN EVENT
     func checkInOnEvent(indexPath: Int, completion: @escaping (Result<Int, Error>) -> ()) {
         if let name = UserDefaults.standard.string(forKey: "userName"),
            let email = UserDefaults.standard.string(forKey: "userEmail"){

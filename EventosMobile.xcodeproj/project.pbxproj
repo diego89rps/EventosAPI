@@ -61,6 +61,7 @@
 		9FE9A30525635E4C00875C59 /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */; };
 		9FE9A3102563684700875C59 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE9A30F2563684700875C59 /* RxCocoa */; };
 		9FE9A3122563684700875C59 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FE9A3112563684700875C59 /* RxSwift */; };
+		9FF933162586A83700B6EA5F /* ResumeVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF933152586A83700B6EA5F /* ResumeVMTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		9FE9A2FA25635DDA00875C59 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		9FE9A2FF25635DF100875C59 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9FE9A30425635E4C00875C59 /* ResumeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewModel.swift; sourceTree = "<group>"; };
+		9FF933152586A83700B6EA5F /* ResumeVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeVMTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				9F0781FF258693F000F9C588 /* SettingsVMTests.swift */,
+				9FF933152586A83700B6EA5F /* ResumeVMTests.swift */,
 				9FE9A2462562CD0600875C59 /* Info.plist */,
 			);
 			path = EventosMobileTests;
@@ -586,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F078200258693F000F9C588 /* SettingsVMTests.swift in Sources */,
+				9FF933162586A83700B6EA5F /* ResumeVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
