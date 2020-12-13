@@ -11,7 +11,7 @@ import UIKit
 class SettingsViewModel{
     
     private var user : User = User.init()
-    private var isRegister : Bool?
+    var isRegister : Bool?
     
     init() {
         _ = status()
