@@ -13,7 +13,7 @@ class NameView: UIView, ViewCodeType {
     let title: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.textColor = .defaultColor(.defaultWhite)
-        $0.font = .averta(.semibold, withSize: 28)
+        $0.font = .boldSystemFont(ofSize: 28)
         $0.numberOfLines = 0
         $0.textAlignment = .center
         $0.text = "Qual o seu nome?"
@@ -24,7 +24,7 @@ class NameView: UIView, ViewCodeType {
         $0.autocapitalizationType = .none
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.borderStyle = .none
-        $0.font = .averta(.regular, withSize: 24)
+        $0.font = .systemFont(ofSize: 24)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         $0.autocorrectionType = .no
@@ -35,7 +35,7 @@ class NameView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Confirmar", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
-        $0.titleLabel?.font = .averta(.semibold, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
         $0.layer.cornerRadius = 12

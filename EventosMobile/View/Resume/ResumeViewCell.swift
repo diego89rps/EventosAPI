@@ -24,7 +24,7 @@ class ResumeViewCell: UITableViewCell {
     
     let leftTitle: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = .averta(.semibold, withSize: 22)
+        $0.font = .boldSystemFont(ofSize: 22)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .left
         $0.text = "titulo"
@@ -34,7 +34,7 @@ class ResumeViewCell: UITableViewCell {
     let date: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.numberOfLines = 0
-        $0.font = .averta(.regular, withSize: 16)
+        $0.font = .systemFont(ofSize: 16)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .left
         $0.text = "data"
@@ -44,7 +44,7 @@ class ResumeViewCell: UITableViewCell {
     let cost: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.numberOfLines = 0
-        $0.font = .averta(.semibold, withSize: 22)
+        $0.font = .boldSystemFont(ofSize: 22)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .left
         $0.text = "R$ 9.00"

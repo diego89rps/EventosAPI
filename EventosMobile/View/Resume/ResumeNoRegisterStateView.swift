@@ -20,7 +20,7 @@ class ResumeNoRegisterStateView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("tentar novamente", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
-        $0.titleLabel?.font = .averta(.semibold, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultWhite)
         $0.layer.cornerRadius = 12

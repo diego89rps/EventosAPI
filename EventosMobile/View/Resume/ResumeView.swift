@@ -13,7 +13,7 @@ class ResumeView: UIView, ViewCodeType {
     let title: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "Eventos"
-        $0.font = .averta(.extra_bold, withSize: 30)
+        $0.font = .boldSystemFont(ofSize: 30)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         return $0

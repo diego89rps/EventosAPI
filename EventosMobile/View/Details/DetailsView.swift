@@ -27,7 +27,7 @@ class DetailsView: UIView, ViewCodeType {
     
     let dateAndCost: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = .averta(.semibold, withSize: 18)
+        $0.font = .boldSystemFont(ofSize: 20)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.text = "14 de janeiro de 2020 - R$ 9,00"
         $0.numberOfLines = 0
@@ -36,7 +36,7 @@ class DetailsView: UIView, ViewCodeType {
     
     let textView: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = .averta(.light, withSize: 16)
+        $0.font = .systemFont(ofSize: 16)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.numberOfLines = 0
         return $0
@@ -46,7 +46,7 @@ class DetailsView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Fazer Check-in", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
-        $0.titleLabel?.font = .averta(.semibold, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultWhite)
         $0.layer.cornerRadius = 12
@@ -57,7 +57,7 @@ class DetailsView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Compartilhar", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultWhite), for: .normal)
-        $0.titleLabel?.font = .averta(.regular, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
         $0.layer.cornerRadius = 12
@@ -68,7 +68,7 @@ class DetailsView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Como chegar", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultWhite), for: .normal)
-        $0.titleLabel?.font = .averta(.regular, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultLightBlue)
         $0.layer.cornerRadius = 12

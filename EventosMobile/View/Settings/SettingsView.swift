@@ -13,7 +13,7 @@ class SettingsView: UIView, ViewCodeType {
     let title: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "Configurações"
-        $0.font = .averta(.extra_bold, withSize: 30)
+        $0.font = .boldSystemFont(ofSize: 30)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         return $0
@@ -29,7 +29,7 @@ class SettingsView: UIView, ViewCodeType {
     let name: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "Ops!"
-        $0.font = .averta(.semibold, withSize: 24)
+        $0.font = .boldSystemFont(ofSize: 24)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         return $0
@@ -38,7 +38,7 @@ class SettingsView: UIView, ViewCodeType {
     let email: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.text = "Você não possui cadastro! Cadastre-se para participar de eventos."
-        $0.font = .averta(.regular, withSize: 17)
+        $0.font = .systemFont(ofSize: 17)
         $0.textColor = .defaultColor(ColorName.defaultWhite)
         $0.textAlignment = .center
         $0.numberOfLines = 0
@@ -49,7 +49,7 @@ class SettingsView: UIView, ViewCodeType {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setTitle("Realizar cadastro", for: .normal)
         $0.setTitleColor(.defaultColor(ColorName.defaultDarkBlue), for: .normal)
-        $0.titleLabel?.font = .averta(.semibold, withSize: 16)
+        $0.titleLabel?.font = .systemFont(ofSize: 16)
         $0.titleLabel?.textAlignment = .left
         $0.backgroundColor = .defaultColor(ColorName.defaultWhite)
         $0.layer.cornerRadius = 12

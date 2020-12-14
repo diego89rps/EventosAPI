@@ -7,25 +7,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Averta.otf</string>
-		<string>Averta-Thin.otf</string>
-		<string>Averta-Thin-Italic.otf</string>
-		<string>Averta-Semibold.otf</string>
-		<string>Averta-Semibold-Italic.otf</string>
-		<string>Averta-Regular-Italic.otf</string>
-		<string>Averta-Light.otf</string>
-		<string>Averta-Light-Italic.otf</string>
-		<string>Averta-Extrathin.otf</string>
-		<string>Averta-Extrathin-Italic.otf</string>
-		<string>Averta-Extra-Bold.otf</string>
-		<string>Averta-Extra-Bold-Italic.otf</string>
-		<string>Averta-Bold.otf</string>
-		<string>Averta-Bold-Italic.otf</string>
-		<string>Averta-Black.otf</string>
-		<string>Averta-Black-Italic.otf</string>
-	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -35,7 +35,7 @@ class ResumeTabViewController: UITabBarController, UITabBarControllerDelegate {
         UITabBar.appearance().tintColor = .defaultColor(ColorName.defaultDarkBlue)
         
         let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedString.Key.font: UIFont.averta(.semibold, withSize: 10)]
+        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)]
         appearance.setTitleTextAttributes(attributes, for: .normal)
     }
     
