@@ -22,9 +22,9 @@ class EventData {
                 } else {
                     if let data = data {
                         let decoder = JSONDecoder()
-                        guard let Response = try? decoder.decode([Event].self, from: data)  else { return }
+                        guard let response = try? decoder.decode([Event].self, from: data) else { return }
                         
-                        for item in Response {
+                        for item in response {
                             self.listEvents.append(item)
                         }
                         completion(.success(self.listEvents))
@@ -64,8 +64,8 @@ class EventData {
                 } else {
                     if let data = data {
                         let decoder = JSONDecoder()
-                        guard let Response = try? decoder.decode(CheckIn.self, from: data)  else { return }
-                            completion(.success(Response))
+                        guard let response = try? decoder.decode(CheckIn.self, from: data)  else { return }
+                            completion(.success(response))
                     }
                 }
             }

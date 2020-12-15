@@ -54,8 +54,8 @@ class MapViewController: AppDefaultViewController {
             .closeButton
             .rx
             .tap
-            .bind {
-                self.dismiss(animated: true)
+            .bind { [weak self] (_) in
+                self?.dismiss(animated: true)
             }.disposed(by: disposeBag)
     }
 }

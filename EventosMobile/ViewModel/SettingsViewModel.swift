@@ -36,11 +36,11 @@ class SettingsViewModel{
     }
     
     func getName() -> String {
-        return isRegister == true ? user.name ?? "user not found" : "Ops!"
+        return isRegister == true ? user.name ?? "usuário não encontrado" : "Ops!"
     }
     
     func getEmail() -> String {
-        return isRegister == true ? user.email ?? "email not found" : "Você não possui cadastro! Cadastre-se para participar de eventos."
+        return isRegister == true ? user.email ?? "email não encontrado" : "Você não possui cadastro! Cadastre-se para participar de eventos."
     }
     
     func getColorBtn() -> UIColor {

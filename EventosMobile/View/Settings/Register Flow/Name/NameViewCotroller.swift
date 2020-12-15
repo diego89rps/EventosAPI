@@ -35,8 +35,8 @@ class NameViewController: AppDefaultViewController {
             .confirmButton
             .rx
             .tap
-            .bind {
-                self.continueResgister()
+            .bind { [weak self] (_) in
+                self?.continueResgister()
             }.disposed(by: disposeBag)
     }
     

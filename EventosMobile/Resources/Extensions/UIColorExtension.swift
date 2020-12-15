@@ -11,7 +11,6 @@ public enum ColorName: String {
     case defaultDarkBlue = "defaultDarkBlue"
     case defaultLightBlue = "defaultLightBlue"
     case defaultMediumBlue = "defaultMediumBlue"
-
     case defaultWhite = "defaultWhite"
 
 }

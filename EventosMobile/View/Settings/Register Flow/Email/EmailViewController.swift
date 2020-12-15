@@ -44,8 +44,8 @@ class EmailViewController: AppDefaultViewController {
             .confirmButton
             .rx
             .tap
-            .bind {
-                self.finishResgister()
+            .bind { [weak self] (_) in
+                self?.finishResgister()
             }.disposed(by: disposeBag)
     }
     
