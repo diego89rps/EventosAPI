@@ -87,9 +87,9 @@ class DetailsViewController: AppDefaultViewController {
     private func makeCheckIn(){
         if let _ = UserDefaults.standard.string(forKey: "userName"),
            let _ = UserDefaults.standard.string(forKey: "userEmail"){
-            checkInUnrealizedAlert()
+            checkInAlert(isRegister: true)
         }else{
-            checkInInvalidAlert()
+            checkInAlert(isRegister: false)
         }
     }
     
@@ -112,25 +112,11 @@ class DetailsViewController: AppDefaultViewController {
         self.coordinator?.goToMap(with : longitude, latitude : latitude)
     }
     
-    func checkInUnrealizedAlert(){
-        let alertController = UIAlertController(title: "Erro", message: "Estamos com problema para efetuar seu check-in. Por favor, tente mais tarde 😊", preferredStyle: .alert)
+    func checkInAlert(isRegister: Bool){
+        let texts = viewModel.getAlertText(value: isRegister)
+        let alertController = UIAlertController(title: texts[0], message: texts[1], preferredStyle: .alert)
 
-        let OKAction = UIAlertAction(title: "ok", style: .default) { (action) in
-
-        }
-        
-        alertController.addAction(OKAction)
-        self.present(alertController, animated: true) {
-            
-        }
-    }
-    
-    func checkInInvalidAlert(){
-        let alertController = UIAlertController(title: "Parado 🤚", message: "Você precisa se identificar na aba Configuraçōes antes de realizar check-in em eventos.", preferredStyle: .alert)
-
-        let OKAction = UIAlertAction(title: "Entendi", style: .default) { (action) in
-            
-        }
+        let OKAction = UIAlertAction(title: texts[2], style: .default) { (action) in }
         
         alertController.addAction(OKAction)
         self.present(alertController, animated: true) {

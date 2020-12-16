@@ -105,4 +105,14 @@ class ResumeViewModel{
             }
         }
     }
+    
+    //MARK: ALERT TEXTS TO CHECK-IN
+    func getAlertText(value: Bool) -> [String]{
+        var texts : [String] = []
+        texts.append(value == true ? "Erro" : "Parado 🤚")
+        texts.append(value == true ? "Estamos com problema para efetuar seu check-in. Por favor, tente mais tarde 😊" : "Você precisa se identificar na aba Configuraçōes antes de realizar check-in em eventos.")
+        texts.append(value == true ? "ok" : "Entendi")
+        
+        return texts
+    }
 }
